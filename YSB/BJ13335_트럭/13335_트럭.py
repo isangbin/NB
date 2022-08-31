@@ -15,11 +15,13 @@ while len(truck) != 0:
         bridge.append(truck.pop(0))
         weight = weight + bridge[-1] - bridge.pop(0)
         cnt += 1
-
+        print(bridge, truck)
     else:   # 올라가면 무게초과일 시
         bridge.append(0)
         weight -= bridge.pop(0)
         cnt += 1
+        print(bridge, truck)
+
 
 # 마지막 트럭이 다리를 통과해야하므로 w 더해줌
 cnt += w
