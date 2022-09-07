@@ -4,7 +4,7 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
-S = input()
+S = sys.stdin.readline() # 이거 쓰면 메모리 초과는 안 남
 stack = []
 
 for s in S:
@@ -23,4 +23,4 @@ for s in S:
                 break
 
 print(len(stack))
-# 메모리 초과..
+# 틀림..
