@@ -1,4 +1,4 @@
-# BOJ_1662 문제풀이
+# BOJ_1662 압축 문제풀이
 # 2022-08-27
 import sys
 def com():
@@ -16,7 +16,7 @@ def com():
         else:
             return len(a)
 
-    # 세가지 경우
+    # 세가지 경우 (뒤에서 부터 돌면서)
     # 1. ')' 이면 다시 돌기
     if a[-1] == ')':
         # 괄호 제거 하고(이하 동문)
@@ -24,8 +24,6 @@ def com():
         # 스택에 0 삽입 하고 재귀 돌기
         stack.append(0)
         return com()
-        # 돌고 나오면 스택에 쌓여 있던 거랑 재귀 돌고 쌓인거 합해서 다시 넣기
-        stack.append(stack.pop() + stack.pop())
 
     # 2. 숫자 이면 괄호 나올때 까지 세기
     while a[-1] != ')' and a[-1] != '(':
