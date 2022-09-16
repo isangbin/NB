@@ -1,8 +1,7 @@
 import sys
-sys.stdin = open('input.txt', 'r')
-
-prob = sys.stdin.readline()
-
+# sys.stdin = open('input.txt', 'r')
+input = sys.stdin.readline
+prob = list(input())
 
 stack = []
 tmp = ''
