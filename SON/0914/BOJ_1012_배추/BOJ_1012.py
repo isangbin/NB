@@ -32,7 +32,7 @@ for t in range(T):
     for n in range(N):
         for m in range(M):
             if board[n][m] == 1:
-                # 한번 적용하면 해당 묶음은 모두 2로 바뀌므로
+                # 한번 적용 하면 해당 묶음은 모두 2로 바뀌 므로
                 # 적용할 때 마다 세기
                 cnt += 1
                 dfs(n, m)

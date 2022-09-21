@@ -3,8 +3,8 @@
 def queen(i):
     global cnt
 
-    if i == N:              # 판의 끝에 도달하면
-        cnt += 1            # 퀸을 다 놓은 것이므로 세기
+    if i == N:              # 판의 끝에 도달 하면
+        cnt += 1            # 퀸을 다 놓은 것 이므로 세기
         return
 
     for j in range(N):
