@@ -22,5 +22,6 @@ for n in range(N-1):                    # 정점 수 -1 만큼 순회하며
     tree[b].append(a)
 
 dfs(1)
+
 for i in range(2, N+1):
     print(par[i])
