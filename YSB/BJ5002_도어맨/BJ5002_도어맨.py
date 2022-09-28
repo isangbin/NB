@@ -35,4 +35,4 @@ while len(p) > 0:
 
 
 ans = m + w
-print(ans)
+print(ans-1)
