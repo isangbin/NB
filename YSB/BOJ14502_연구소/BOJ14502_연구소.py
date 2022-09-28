@@ -15,7 +15,6 @@ def bfs():
                 visited[i][j] = 1
 
     while q:
-
         i, j = q.pop(0)
         for di, dj in [[0, 1], [1, 0], [0, -1], [-1, 0]]:
             ni, nj = i+di, j+dj
