@@ -1,13 +1,12 @@
 # tc 46/50 타임오버
 import sys
-import copy
 sys.stdin = open('sample_input.txt', 'r')
 
 
 def drug(part):
     global ans
     for i in range(1 << len(part)):
-        table = copy.deepcopy(film)
+        table = [f[:] for f in film]
         select = []
         for j in range(len(part)):
             if i & (1 << j):
@@ -56,7 +55,7 @@ for tc in range(1, T+1):
         for j in range(D):
             if i & (1 << j):
                 part.append(j)
-
+        # -----------------------------
         if part:
             if test(film, K) == 1:
                 ans = 0
